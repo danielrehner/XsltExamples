@@ -41,11 +41,22 @@ body
 
 .movie
 {
-    border: 1px dashed #000;
+    border: 1px solid #808080;
     padding: 10px;
     margin: 10px;
     clear: both;
-	
+    background-color:#E0DED6;
+	background-image:-moz-linear-gradient(top, #fff, #E0DED6); /* FF3.6 */
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #E0DED6)); /* Saf4+, Chrome */
+	background-image:-webkit-linear-gradient(#fff, #E0DED6); /* Chrome 10+, Saf6 */
+	background-image:linear-gradient(top, #fff, #E0DED6);
+	-moz-box-shadow: 0 11px rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-box-shadow: 0 11px rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.8);
+	box-shadow: 0 11px rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.8);
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	text-shadow:0 1px 0 #fff;
 }
 
 .movie dl dt 
